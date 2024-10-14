@@ -1,0 +1,5 @@
+{"backend_state":"ready","connection_file":"/tmp/xdg-runtime-user/jupyter/kernel-8d2adc6b-d4cb-4a90-be5f-1821c19f7ab1.json","kernel":"python3","kernel_error":"","kernel_state":"idle","kernel_usage":{"cpu":0,"memory":0},"last_ipynb_save":1728355162961,"trust":true,"type":"settings"}
+{"cell_type":"code","end":1728233948548,"exec_count":12,"id":"3b4a35","input":"import pickle\nloaded_model=pickle.load(open(\"finalized_model_linear.sav\",'rb'))\nresult=loaded_model.predict([[int(input(\"enter the year:\"))]])\nresult","kernel":"python3","output":{"0":{"name":"input","opts":{"password":false,"prompt":"enter the year:"},"value":"25"},"1":{"name":"stderr","text":"/usr/local/lib/python3.10/dist-packages/sklearn/base.py:493: UserWarning: X does not have valid feature names, but LinearRegression was fitted with feature names\n  warnings.warn(\n"},"2":{"data":{"text/plain":"array([[101471.46800502]])"},"exec_count":12}},"pos":0,"start":1728233945916,"state":"done","type":"cell"}
+{"id":"d889ce","input":"","pos":1,"type":"cell"}
+{"id":0,"time":1728233347020,"type":"user"}
+{"last_load":1728233346917,"type":"file"}
